@@ -137,3 +137,32 @@ section:nth-child(3) p{
     height: 50px;
     margin-left: 5vw;
 }
+footer{
+    display: flex;
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    width: 100vw;
+    justify-content: center;
+    gap: 50px;
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+figure{
+    display: flex;
+    text-align: center;
+    gap: 10px;
+}
+
+footer div a{
+    text-decoration: none;
+    color: #333;
+    padding: 5px 0;
+}
+footer div a:hover,footer div a:active{
+    color: #4f9bec;
+}
