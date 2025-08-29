@@ -3,7 +3,7 @@
     height: 50px;
 
 }
-header{
+.main-header{
     display: flex;
     align-items: center;
     padding: 10px 10vw;
@@ -15,7 +15,7 @@ aside nav{
     right: 5vw;
     justify-content: space-between;
 }
-aside nav a{
+aside nav a ,section:nth-child(2) a,section:nth-child(3) a{
     display: inline-block;
     margin: 0 15px;
     text-decoration: none;
@@ -63,4 +63,77 @@ section:first-child button{
     padding: 0 20px;
     cursor: pointer;
     
+}
+.section-header{
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+    grid-column: span 4;
+}
+section:nth-child(2){
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+}
+section:nth-child(2) div{
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+section:nth-child(2) img{
+    width: 100%;
+    height: 45%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+section:nth-child(2) a:hover{
+    background-color: rgb(24, 223, 156);
+}
+section:nth-child(2) a{
+    transition: background-color 0.3s;
+    border: solid lightgray 1px;
+    width: 65%;
+}
+
+section:nth-child(3){
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    padding: 20px 0;
+    gap: 20px;
+}
+section:nth-child(3) div{
+    display: grid;
+    margin: 10px 10px 10px 10vw;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    padding: 10px;
+   justify-content: center;
+}
+section:nth-child(3) a{
+    transition: background-color 0.3s;
+    border: solid lightgray 1px;
+    width: 65%;
+    height: 20px;
+    background-color: #4f9bec;
+    margin-top: 10px;
+    color: white;
+    grid-column: span 2;
+
+}
+
+section:nth-child(3) p{
+    grid-row: span 2;
+    grid-column: span 2;
+}
+.icons{
+    width: 50px;
+    height: 50px;
+    margin-left: 5vw;
 }
